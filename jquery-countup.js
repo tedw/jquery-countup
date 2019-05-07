@@ -30,7 +30,11 @@
 					easing: this.settings.easing,
 					step: function() {
 						$el.text(Math.ceil( this.countNum ));
-					}
+					},
+					 complete:function() {
+                                          $el.text(this.countNum)
+                                        }
+					
 				});
 			}
 		};
